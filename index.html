@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>An Esty Christmas | Homemade gifts for everyone you love</title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+      <nav>
+        <h1>Etsy Christmas</h1>
+        <h2>Giftlist |</h2>
+        <h2> Wishlist</h2>
+      </nav>
+    </header>
+
+    <ng-view></ng-view>
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+
+    <!-- common -->
+    <script src="common/module.js" charset="utf-8"></script>
+    <script src="common/controllers.js" charset="utf-8"></script>
+    <script src="common/services.js" charset="utf-8"></script>
+
+    <!-- etsy -->
+    <script src="etsy/etsy.module.js" charset="utf-8"></script>
+    <script src="etsy/etsy.controller.js" charset="utf-8"></script>
+    <script src="etsy/etsy.service.js" charset="utf-8"></script>
+
+</body>
+</html>
