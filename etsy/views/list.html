@@ -1,0 +1,14 @@
+<h2>Gift Suggestions:</h2>
+
+<input type="text" ng-model="inputBox" name="keyword" value="keyword">
+<button ng-click="buildUrl(inputBox)">search</button><br>
+
+<div id="listing" ng-repeat="item in etsyCtrl.items | filter:inputBox" data-id="{{item.id}}">
+  <h4>{{item.title}}</h4>
+  <h5>{{item.price | currency: "$"}}</h5>
+  <img ng-src="{{item.img}}" alt="" />
+  <br>
+  <a href="#/etsy/{{item.id}}">See Details</a>
+  <button class="options" name="toList" ng-click="etsyCtrl.addToList(item)">Add To Wishlist</button>
+  <button class="options" name="toGiftlist" ng-click="etsyCtrl.addToGList(item)">Add To Giftlist</button>
+</div>

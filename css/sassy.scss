@@ -1,8 +1,96 @@
 @import "normalize.scss";
 
-h1, h2 {
-  font-family: 'Lobster', cursive;
+//VARIABLES
+  $headerFont: 'Pacifico', cursive;
+  $bodyFont: 'Didact Gothic', sans-serif;
+
+h1 {
+  font-size: 4em;
+  text-align: right;
+  margin: 0 20px 0 0 ;
+  padding: 0;
+  color: #E98784;
+  text-align: center;
+  font-family: $headerFont;
+  display: inline-block;
   a {
     text-decoration: none;
+  }
+}
+
+#icon {
+  width: 85px;
+}
+
+#logo, #icon {
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: $bodyFont;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 10px;
+  a {
+    text-decoration: none;
+  }
+}
+
+a {
+  color: #E98784;
+}
+
+header {
+  height: 200px;
+  background-color: #830400;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  background-color: #830400;
+  color: #E98784;
+  font-family: $bodyFont;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#listing {
+  width: 28%;
+  margin: 20px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  img {
+    width: 200px;
+  }
+}
+
+.options {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 5px;
+}
+
+.list {
+  width: 45%;
+  margin: 20px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  img {
+    width: 200px;
   }
 }

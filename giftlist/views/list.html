@@ -1,0 +1,9 @@
+<h2>Giftlist:</h2>
+
+<div class="list" ng-repeat="el in giftlistCtrl.items" data-id="{{el.id}}">
+  <h4>{{el.title}}</h4>
+  <h5>{{el.price | currency: "$"}}</h5>
+  <img ng-src="{{el.img}}" alt="" />
+  <br>
+  <button name="toList" ng-click="giftlistCtrl.delete(el)">Remove from Giftlist</button>
+</div>

@@ -1,0 +1,12 @@
+<h2>Details</h2>
+<div data-id="{{etsyCtrl.item.id}}">
+  <h3>{{etsyCtrl.item.title}}</h3>
+  <h4>{{etsyCtrl.item.price | currency: "$"}}</h4>
+  <img ng-src="{{etsyCtrl.item.img}}" alt="" />
+  <p>
+    {{etsyCtrl.item.materials}}
+  </p>
+  <p>
+    {{etsyCtrl.item.description}}
+    <button name="toList" ng-click="etsyCtrl.addToList(item)">Add To Wishlist</button>
+</div>
