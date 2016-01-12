@@ -1,11 +1,13 @@
 <h2>Giftlist:</h2>
 
+<h3 class="listDesc">
+  The giftlist is where you can keep track of all of the gifts you're planning on giving your loved ones during the holiday season.
+</h3>
+
 <div class="list" ng-repeat="el in giftlistCtrl.items" data-id="{{el.id}}">
   <h4>{{el.title}}</h4>
   <h5>{{el.price | currency: "$"}}</h5>
   <img ng-src="{{el.img}}" alt="" />
   <br>
-  <!-- This gift is for: <input type="text" name="assignee" value="name">
-  <input type="button" ng-click="giftlistCtrl.assign(el)" name="name" value=""> -->
   <button name="toList" ng-click="giftlistCtrl.delete(el)">Remove from Giftlist</button>
 </div>

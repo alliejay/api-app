@@ -28,10 +28,6 @@ angular
       WishlistService.addToList(item);
     };
 
-    vm.assign = function(item){
-
-    };
-
     vm.addToGList = function(item) {
       GiftlistService.addToGList(item);
     };
