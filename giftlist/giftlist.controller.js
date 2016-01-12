@@ -3,10 +3,10 @@
 
 angular
   .module('etsyGiftlist')
-  .controller('GiftlistController', function ($scope, GiftlistService, $routeParams) {
+  .controller('GiftlistController', function ($scope, GiftlistService, WishlistService, $routeParams) {
     var vm = this;
 
-    vm.addItem = function(item){
+    vm.addGItem = function(item){
       GiftlistService.addToGList(item);
     };
 

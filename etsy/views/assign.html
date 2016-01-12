@@ -1,4 +1,4 @@
-<h2>Details</h2>
+<h2>Who do you want to give this to?</h2>
 <div data-id="{{etsyCtrl.item.id}}">
   <h3>{{etsyCtrl.item.title}}</h3>
   <h4>{{etsyCtrl.item.price | currency: "$"}}</h4>
@@ -9,5 +9,8 @@
   <p>
     {{etsyCtrl.item.description}}
   </p>
-    <button name="toList" ng-click="etsyCtrl.addToList(item)">Add To Wishlist</button>
+  <p>
+    This gift is for: <input type="text" name="name" value="name">
+    <input type="submit" ng-click="etsyCtrl.addToGList(item)" name="submit" value="save">
+  </p>
 </div>

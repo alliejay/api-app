@@ -426,3 +426,6 @@ body {
   vertical-align: top; }
   .list img {
     width: 200px; }
+
+#email {
+  margin: 20px; }

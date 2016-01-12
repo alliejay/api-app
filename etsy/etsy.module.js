@@ -5,7 +5,7 @@
       'ngRoute',
       'underscore',
       'etsyWishlist',
-      // 'etsyGiftlist'
+      'etsyGiftlist'
     ])
     .config(function ($routeProvider) {
       $routeProvider
@@ -15,6 +15,10 @@
         })
         .when('/etsy/:id', {
           templateUrl: 'etsy/views/detail.html',
+          controller: 'EtsyController as etsyCtrl',
+        })
+        .when('/etsy/assign', {
+          templateUrl: 'etsy/views/assign.html',
           controller: 'EtsyController as etsyCtrl',
         })
         .otherwise({ redirectTo: '/404'});

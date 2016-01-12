@@ -3,7 +3,7 @@
 
 angular
   .module('etsyWishlist')
-  .controller('WishlistController', function ($scope, WishlistService, $routeParams) {
+  .controller('WishlistController', function ($scope, WishlistService, GiftlistService, $routeParams) {
     var vm = this;
 
     vm.addItem = function(item){

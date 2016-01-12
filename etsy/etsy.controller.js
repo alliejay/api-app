@@ -3,7 +3,7 @@
 
 angular
   .module('etsyChristmas')
-  .controller('EtsyController', function ($scope, etsyService, WishlistService, $routeParams) {
+  .controller('EtsyController', function ($scope, etsyService, WishlistService, GiftlistService, $routeParams) {
     var vm = this;
 
     etsyService.getItems().then(function(items){
@@ -26,6 +26,10 @@ angular
 
     vm.addToList = function(item) {
       WishlistService.addToList(item);
+    };
+
+    vm.assign = function(item){
+
     };
 
     vm.addToGList = function(item) {

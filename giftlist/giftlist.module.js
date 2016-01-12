@@ -5,7 +5,8 @@
     .module('etsyGiftlist', [
       'ngRoute',
       'underscore',
-      'etsyChristmas'
+      'etsyChristmas',
+      'etsyWishlist'
     ])
     .config(function ($routeProvider) {
       $routeProvider
