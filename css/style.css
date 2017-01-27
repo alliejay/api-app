@@ -363,6 +363,8 @@ h1 {
   display: inline-block; }
   h1 a {
     text-decoration: none; }
+    h1 a:hover {
+      text-decoration: underline; }
 
 #icon {
   width: 85px; }
@@ -426,6 +428,9 @@ body {
   vertical-align: top; }
   .list img {
     width: 200px; }
+
+.listDesc {
+  text-align: left; }
 
 #email {
   margin: 20px; }

@@ -1,5 +1,9 @@
 <h2>Wishlist:</h2>
 
+<h3 class="listDesc">
+  The wishlist is where you can keep track of all of the items you'd love to receive.
+</h3>
+
 <div class="list" ng-repeat="el in wishlistCtrl.items" data-id="{{el.id}}">
   <h4>{{el.title}}</h4>
   <h5>{{el.price | currency: "$"}}</h5>
